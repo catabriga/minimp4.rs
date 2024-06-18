@@ -52,7 +52,6 @@ impl<W: Write + Seek> Mp4Muxer<W> {
                 width,
                 height,
                 if is_hevc { 1 } else { 0 },
-                self.str_buffer.last().unwrap().as_ptr(),
             );
         }
     }
